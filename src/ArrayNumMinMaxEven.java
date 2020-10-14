@@ -15,4 +15,12 @@ private static final    int[] array1 = new int[20];
             }
         }return min;
     }
+    public static int evenNumCnt (){
+        int cnt =0;
+        for (int i = 0; i <array1.length ; i++) {
+            if ( array1[i] % 2 == 0){
+                cnt++;
+            }
+        }return cnt;
+    }
 }
