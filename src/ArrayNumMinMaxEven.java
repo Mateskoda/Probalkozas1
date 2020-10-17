@@ -7,7 +7,7 @@ public class ArrayNumMinMaxEven {
             array1[i] = (int) (Math.random() * 101);
         }
         int[] szamok = {1, 2, 634, 64};
-        System.out.println(countOddNumbersInArray(szamok));
+        System.out.println(sumOfEvenNumbersOfArray(szamok));
     }
 
     public static int findMinOfArray() {
@@ -43,10 +43,20 @@ public class ArrayNumMinMaxEven {
     public static int countOddNumbersInArray(int[] array) {
         int counter = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i]%2!=0){
+            if (array[i] % 2 != 0) {
                 counter++;
             }
         }
         return counter;
+    }
+
+    public static int sumOfEvenNumbersOfArray(int[] array) {
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                sum += array[i];
+            }
+        }
+        return sum;
     }
 }
