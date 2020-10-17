@@ -6,8 +6,8 @@ public class ArrayNumMinMaxEven {
         for (int i = 0; i < array1.length; i++) {
             array1[i] = (int) (Math.random() * 101);
         }
-//        int[] szamok = {1, 2, 634, 67};
-        System.out.println(findMaxOfArray(array1));
+        int[] szamok = {1, 2, 634, 64};
+        System.out.println(countOddNumbersInArray(szamok));
     }
 
     public static int findMinOfArray() {
@@ -38,5 +38,15 @@ public class ArrayNumMinMaxEven {
             }
         }
         return max;
+    }
+
+    public static int countOddNumbersInArray(int[] array) {
+        int counter = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i]%2!=0){
+                counter++;
+            }
+        }
+        return counter;
     }
 }
